@@ -1,0 +1,13 @@
+# Ignore full raw SDWA dataset (too large for GitHub)
+datasets/SDWA_dataset/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+
+# OS generated files    
+.DS_Store
+
