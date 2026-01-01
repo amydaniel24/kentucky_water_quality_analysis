@@ -52,6 +52,12 @@ I made the executive desicion to extract only Kentucky data and have Git track t
 
 This was something that I did in my previous position. We would pull data or columns or rows that we needed to analyze and leave the rest of the data behind.
 
+
+### Data Included in This Repository
+- `ky_violations_enforcement.csv`
+- `ky_pub_water_systems.csv`
+- `ref_contaminant_codes.csv`
+
 ---
 
 ## Project Structure
@@ -75,21 +81,52 @@ kentucky_water_quality_analysis/
 
 ---
 
-## Keystone Week 1 Focus
-This step of the project focuses on:
-
-- Loading CSV data using Pandas
-- Inspecting the dataset with `.head()`, `.info()`, and `.shape`
-- Exploring categorical and numeric columns
-- Finding missing values and data type issues
-- Renaming columns 
-- Converting date columns to datetime format
-- Establishing a clean GitHub repository
-
-No final conclusions are drawn at this stage. The emphasis is on **process, structure, and understanding the data**.
 
 ---
 
+## Keystone Project – Week 1 Focus
+Week 1 focused on getting the data into a usable state.
+
+Key tasks included:
+- Loading CSV data using Pandas
+- Inspecting dataset size, structure, and data types
+- Exploring categorical and numeric columns
+- Assessing missing data
+- Renaming columns for clarity
+- Converting date fields to datetime format
+- Verifying that all violation records were Kentucky-only
+- Establishing a clean and functional GitHub repository
+
+No conclusions were drawn at this stage. The emphasis was on understanding the data for later analysis.
+
+---
+
+## Keystone Project – Week 2 Focus (EDA + Visualizations)
+Week 2 expanded on the initial setup by performing exploratory data analysis (EDA) and creating early visualizations to identify patterns and guide the project’s direction.
+
+Key tasks included:
+- Continuing data cleaning and validation
+- Grouping and aggregating data to explore violation categories and trends
+- Examining health based versus non health based violations
+- Exploring severity indicators and noncompliance timelines
+- Creating multiple types of visualizations:
+  - Bar charts for comparison
+  - A line chart to examine changes over time
+  - Distribution plots (histogram and boxplot) to assess severity and spread
+- Saving visualizations to a dedicated `plots/` folder
+
+This exploratory work led to a focused analysis question for future stages of the project:
+
+## Emerging Analysis Question
+
+Based on the EDA done so far, the main question for this project is:
+
+**Which contaminants appear most frequently in Kentucky drinking water violations?**
+
+
+The next steps will involve linking violations to contaminants and looking at their potential impact on public health.
+
+---
 
 ## Requirements
-All required Python packages are listed in `requirements.txt`.
+All required Python packages for this project are listed in `requirements.txt`.
