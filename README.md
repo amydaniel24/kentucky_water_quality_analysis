@@ -78,55 +78,51 @@ kentucky_water_quality_analysis/
 ├── requirements.txt
 └── .gitignore
 
-
 ---
 
 
 ---
 
-## Keystone Project – Week 1 Focus
-Week 1 focused on getting the data into a usable state.
-
-Key tasks included:
-- Loading CSV data using Pandas
-- Inspecting dataset size, structure, and data types
-- Exploring categorical and numeric columns
-- Assessing missing data
-- Renaming columns for clarity
-- Converting date fields to datetime format
-- Verifying that all violation records were Kentucky-only
-- Establishing a clean and functional GitHub repository
-
-No conclusions were drawn at this stage. The emphasis was on understanding the data for later analysis.
+## Keystone Week 1 Focus (Loading + Cleaning)
+Week 1 focused on getting the SDWA data into a workable state:
+- Loaded CSVs with Pandas
+- Looked at structure with `.head()`, `.info()`, `.shape()`
+- Looked at categorical and numeric columns
+- Checked missing values and data type issues
+- Renamed key columns 
+- Converted date fields to datetime
+- Verified Kentucky only records using PWSID/state matching
+- Setup GitHub repo structure
 
 ---
 
-## Keystone Project – Week 2 Focus (EDA + Visualizations)
-Week 2 expanded on the initial setup by performing exploratory data analysis (EDA) and creating early visualizations to identify patterns and guide the project’s direction.
+## Keystone Week 2 Focus (EDA + Early Visualizations)
+Week 2 focused on exploratory questions and visuals:
+- Which violation categories are most common in Kentucky?
+- How many violations are health based vs not health based?
+- How have violations changed over time?
 
-Key tasks included:
-- Continuing data cleaning and validation
-- Grouping and aggregating data to explore violation categories and trends
-- Examining health based versus non health based violations
-- Exploring severity indicators and noncompliance timelines
-- Creating multiple types of visualizations:
-  - Bar charts for comparison
-  - A line chart to examine changes over time
-  - Distribution plots (histogram and boxplot) to assess severity and spread
-- Saving visualizations to a dedicated `plots/` folder
+Visuals:
+- Bar chart: violation category counts
+- Bar chart: health-based vs non health-based
+- Line chart: violations over time by year
 
-This exploratory work led to a focused analysis question for future stages of the project:
+---
 
-## Emerging Analysis Question
+## Keystone Week 4 Focus (Advanced Visualizations + Visual Integrity)
+Week 4 focused on polishing visuals and applying ethical visualization principles:
+- Improved labels and titles
+- Added context and limitations
+- Added a distribution chart (boxplot) and a relationship chart (scatterplot)
+- Created a `save_plot()` helper and saved exported charts to the `plots/` folder
 
-Based on the EDA done so far, the main question for this project is:
-
-**Which contaminants appear most frequently in Kentucky drinking water violations?**
-
-
-The next steps will involve linking violations to contaminants and looking at their potential impact on public health.
+Polished visuals:
+- **Comparison:** violation category counts and percent view
+- **Pattern:** violations over time (line chart)
+- **Distribution:** noncompliance duration days by health based flag (boxplot, capped at 95th percentile and labeled)
+- **Relationship:** contaminant frequency vs percent flagged as health based (scatterplot)
 
 ---
 
 ## Requirements
-All required Python packages for this project are listed in `requirements.txt`.
+All required Python packages are listed in `requirements.txt`.
