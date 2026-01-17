@@ -62,21 +62,23 @@ This was something that I did in my previous position. We would pull data or col
 
 ## Project Structure
 
-kentucky_water_quality_analysis/
-│
-├── datasets/
-│ └── SDWA_ky/
-│ ├── ky_violations_enforcement.csv
-│ ├── ky_pub_water_systems.csv
-│ └── ref_contaminant_codes.csv
-│
-├── notebooks/
-│ └── keystone_water_ky.ipynb
-│
-├── make_ky_extracts.py
-├── README.md
-├── requirements.txt
-└── .gitignore
+
+kentucky_water_quality_analysis/  
+│  
+├── datasets/  
+│ └── SDWA_ky/  
+│ ├── ky_violations_enforcement.csv  
+│ ├── ky_pub_water_systems.csv  
+│ └── ref_contaminant_codes.csv  
+│  
+├── notebooks/  
+│ └── keystone_water_ky.ipynb  
+│  
+├── make_ky_extracts.py  
+├── README.md  
+├── requirements.txt  
+└── .gitignore  
+  
 
 ---
 
