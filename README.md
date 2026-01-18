@@ -83,6 +83,30 @@ kentucky_water_quality_analysis/
 ---
 
 
+## Setup Instructions (Run This Project)
+
+1. **Clone the repository**
+   - `git clone https://github.com/amydaniel24/kentucky_water_quality_analysis.git`
+   - `cd kentucky_water_quality_analysis`
+
+2. **Create and activate a virtual environment**
+   - Windows (PowerShell):
+     - `python -m venv .venv`
+     - `.\.venv\Scripts\Activate.ps1`
+   - Windows (Git Bash):
+     - `python -m venv .venv`
+     - `source .venv/Scripts/activate`
+
+3. **Install dependencies**
+   - `pip install -r requirements.txt`
+
+4. **Open and run the notebook**
+   - `jupyter notebook`
+   - Open: `notebooks/keystone_water_ky.ipynb`
+
+
+
+
 ---
 
 ## Keystone Week 1 Focus (Loading + Cleaning)
