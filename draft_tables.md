@@ -80,7 +80,7 @@ This table provides health context by showing what levels are considered unsafe 
 
 ## How These Tables Relate
 
-- Each public water system** can have many violations.
+- Each public water system can have many violations.
 - Each violation is linked to one contaminant.
 - Each contaminant may have one associated EPA standard.
 - EPA standards help explain why a violation is considered a health risk.
