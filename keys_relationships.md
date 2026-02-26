@@ -50,16 +50,12 @@ This document defines the primary keys and foreign keys I plan to use in my data
 
 **Primary key (PK):**
 
-- contaminant_name (tentative)
-
-**Possible alternate key:**
-
-- contaminant_code (if the standards dataset includes a matching code)
+- contaminant_name
 
 **Notes:**
 
-- If the standards file uses contaminant names only, I will link on contaminant_name.
-- If it includes an EPA contaminant code, I will use that instead (more reliable than text matching).
+- The EPA standards dataset uses contaminant names rather than numeric codes.
+- This table will be joined to violations data using standardized contaminant names.
 
 ---
 
