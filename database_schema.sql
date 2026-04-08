@@ -43,3 +43,9 @@ CREATE TABLE sdwa_violations (
         FOREIGN KEY (contaminant_name)
         REFERENCES contaminants(contaminant_name)
 );
+
+TRUNCATE TABLE sdwa_violations;
+
+SELECT COUNT(*) FROM sdwa_violations;
+
+SELECT * FROM sdwa_violations LIMIT 10;
