@@ -1,13 +1,68 @@
-# Ignore full raw SDWA dataset (too large for GitHub)
+
+
+# =========================
+
+# LARGE DATA (DO NOT PUSH)
+
+# =========================
+
 datasets/SDWA_dataset/
 
-# Python cache
-__pycache__/
-*.pyc
+# =========================
 
-# Jupyter checkpoints
+# VIRTUAL ENVIRONMENT
+
+# =========================
+
+venv/
+env/
+.venv/
+
+# =========================
+
+# PYTHON CACHE
+
+# =========================
+
+**pycache**/
+*.pyc
+*.pyo
+*.pyd
+
+# =========================
+
+# JUPYTER
+
+# =========================
+
 .ipynb_checkpoints/
 
-# OS generated files    
+# =========================
+
+# DATABASE FILES
+
+# =========================
+
+*.db
+*.sqlite
+*.sqlite3
+
+# =========================
+
+# LOG FILES
+
+# =========================
+
+*.log
+
+# =========================
+
+# OS FILES
+
+# =========================
+
 .DS_Store
+Thumbs.db
+
+# =========================
 
